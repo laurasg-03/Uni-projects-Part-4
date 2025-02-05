@@ -1,0 +1,4 @@
+db.Indicador.aggregate([
+{$match : { $text: { $search: "Hospitals" }}},
+{$group: {_id: "$Unidad" , count_tipos : {$count:{}}}}
+])

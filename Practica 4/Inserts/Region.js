@@ -1,0 +1,75 @@
+/*
+Insert (MongoDB) de Region generado por codigo
+Autores: Laura Sanchez y Felipe Ruiz. (Pareja 11 del grupo 6212)
+Gestion de Datos Biomedicos. Practica 4
+*/
+
+db.Region.drop();
+db.Region.createIndex({CodigoR:1}, {unique:true});
+var Region=
+[
+	{'CodigoR':'ALB'},
+	{'CodigoR':'AND'},
+	{'CodigoR':'ARM'},
+	{'CodigoR':'AUT'},
+	{'CodigoR':'AZE'},
+	{'CodigoR':'BLR'},
+	{'CodigoR':'BEL'},
+	{'CodigoR':'BIH'},
+	{'CodigoR':'BGR'},
+	{'CodigoR':'HRV'},
+	{'CodigoR':'CYP'},
+	{'CodigoR':'CZE'},
+	{'CodigoR':'DNK'},
+	{'CodigoR':'EST'},
+	{'CodigoR':'FIN'},
+	{'CodigoR':'FRA'},
+	{'CodigoR':'GEO'},
+	{'CodigoR':'DEU'},
+	{'CodigoR':'GRC'},
+	{'CodigoR':'HUN'},
+	{'CodigoR':'ISL'},
+	{'CodigoR':'IRL'},
+	{'CodigoR':'ISR'},
+	{'CodigoR':'ITA'},
+	{'CodigoR':'KAZ'},
+	{'CodigoR':'KGZ'},
+	{'CodigoR':'LVA'},
+	{'CodigoR':'LTU'},
+	{'CodigoR':'LUX'},
+	{'CodigoR':'MLT'},
+	{'CodigoR':'MCO'},
+	{'CodigoR':'MNE'},
+	{'CodigoR':'NLD'},
+	{'CodigoR':'MKD'},
+	{'CodigoR':'NOR'},
+	{'CodigoR':'POL'},
+	{'CodigoR':'PRT'},
+	{'CodigoR':'MDA'},
+	{'CodigoR':'ROU'},
+	{'CodigoR':'RUS'},
+	{'CodigoR':'SMR'},
+	{'CodigoR':'SRB'},
+	{'CodigoR':'SVK'},
+	{'CodigoR':'SVN'},
+	{'CodigoR':'ESP'},
+	{'CodigoR':'SWE'},
+	{'CodigoR':'CHE'},
+	{'CodigoR':'TJK'},
+	{'CodigoR':'TUR'},
+	{'CodigoR':'TKM'},
+	{'CodigoR':'UKR'},
+	{'CodigoR':'GBR'},
+	{'CodigoR':'UZB'},
+	{'CodigoR':'WHO_EURO'},
+	{'CodigoR':'EU_MEMBERS'},
+	{'CodigoR':'EU_BEFORE_MAY2004'},
+	{'CodigoR':'EU_AFTER_MAY2004'},
+	{'CodigoR':'CIS'},
+	{'CodigoR':'CARINFONET'},
+	{'CodigoR':'SEEHN'},
+	{'CodigoR':'NORDIC'},
+	{'CodigoR':'SMALL'}
+];
+db.Region.insertMany(Region)
+
